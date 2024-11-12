@@ -1,5 +1,4 @@
-"# Web-developer-intern-task" 
-In the provided code, the following languages are used:
+"# Web-developer-intern-task"#
 
 In the provided code, the following languages are used:
 
