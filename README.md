@@ -23,4 +23,4 @@ Summary:
 - JavaScript: Interactivity
 
 These three core languages together create a fully functional and interactive webpage.
-![Screenshot 2024-11-12 143829](https://github.com/user-attachments/assets/0cd4f23c-42f6-4636-8c12-c9f60f317955)
+![Screenshot 2024-11-12 143829](https://github.com/user-attachments/assets/77d5c230-53ec-422f-bcd4-f75a3680ba66)
