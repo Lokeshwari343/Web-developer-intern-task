@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Cards</title>
+  <style>
+    /* Global body styling */
+    body {
+      font-family: Arial, sans-serif; /* Font for the page */
+      background-color: #f5f7fa; /* Light grey background */
+      display: flex; /* Flexbox for centering content */
+      justify-content: center; /* Horizontally center content */
+      align-items: center; /* Vertically center content */
+      height: 100vh; /* Full screen height */
+      margin: 0; /* Remove default margins */
+    }
+
+    /* Container for cards */
+    .cards {
+      display: flex; /* Display cards side by side */
+      gap: 20px; /* Space between cards */
+    }
+
+    /* Individual card styling */
+    .card {
+      background: white; /* White background for the card */
+      border-radius: 10px; /* Rounded corners */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+      width: 250px; /* Fixed width for cards */
+      padding: 20px; /* Inner padding for content */
+    }
+
+    /* Style for the badge at the top (e.g., hourly/part-time) */
+    .badge {
+      display: inline-block; /* Inline-block to fit content */
+      padding: 5px 10px; /* Padding for text inside */
+      font-size: 12px; /* Smaller font size */
+      font-weight: bold; /* Bold text */
+      border-radius: 15px; /* Fully rounded corners */
+      margin-bottom: 10px; /* Space below the badge */
+    }
+
+    /* Green badge for hourly jobs */
+    .hourly {
+      background-color: #dff7df; /* Light green background */
+      color: #2e7d32; /* Dark green text */
+    }
+
+    /* Orange badge for part-time jobs */
+    .part-time {
+      background-color: #ffe6cc; /* Light orange background */
+      color: #ff9800; /* Dark orange text */
+    }
+
+    /* Styling for price section */
+    .price {
+      font-size: 24px; /* Large font size */
+      font-weight: bold; /* Bold text */
+      margin-bottom: 15px; /* Space below price */
+    }
+
+    /* Styling for the job title */
+    h3 {
+      font-size: 18px; /* Medium font size */
+      margin-bottom: 10px; /* Space below title */
+    }
+
+    /* Styling for the company name */
+    .company {
+      font-size: 14px; /* Small font size */
+      color: #666; /* Grey text for subtle appearance */
+      margin-bottom: 15px; /* Space below company name */
+    }
+
+    /* Container for skill tags */
+    .tags {
+      display: flex; /* Flexbox for arranging tags horizontally */
+      gap: 5px; /* Space between tags */
+      margin-bottom: 15px; /* Space below tags */
+    }
+
+    /* Individual skill tags */
+    .tag {
+      background-color: #e9ecef; /* Light grey background for tags */
+      padding: 5px 10px; /* Padding inside each tag */
+      border-radius: 15px; /* Rounded corners for tags */
+      font-size: 12px; /* Small font size */
+    }
+
+    /* Styling for the description text */
+    p {
+      font-size: 14px; /* Small font size */
+      color: #666; /* Grey text */
+      margin-bottom: 15px; /* Space below paragraph */
+    }
+
+    /* Styling for the "View Job" button */
+    .view-job {
+      text-align: center; /* Center text inside the button */
+      padding: 10px; /* Padding for the button */
+      font-size: 14px; /* Medium font size */
+      background-color: #007bff; /* Blue background color */
+      color: white; /* White text */
+      border-radius: 5px; /* Rounded corners for button */
+      text-decoration: none; /* Remove underline from the link */
+      display: inline-block; /* Makes the link look like a button */
+      cursor: pointer; /* Pointer cursor for buttons */
+    }
+
+    /* Hover effect for the button */
+    .view-job:hover {
+      background-color: #0056b3; /* Darker blue on hover */
+    }
+  </style>
+</head>
+<body>
+  <!-- Container holding all job cards -->
+  <div class="cards">
+    <!-- First job card -->
+    <div class="card">
+      <!-- Badge indicating job type -->
+      <div class="badge hourly">hourly</div>
+      <!-- Hourly rate -->
+      <div class="price">$55 / hr</div>
+      <!-- Job title -->
+      <h3>UI/UX Designer</h3>
+      <!-- Company name -->
+      <div class="company">Epic Coders</div>
+      <!-- Skill tags -->
+      <div class="tags">
+        <span class="tag">UI</span>
+        <span class="tag">UX</span>
+        <span class="tag">photoshop</span>
+        <span class="tag">+4</span>
+      </div>
+      <!-- Job description -->
+      <p>We are looking for an experienced UI and UX designer to work on our new projects...</p>
+      <!-- Button with JavaScript functionality -->
+      <button class="view-job" onclick="viewJob('UI/UX Designer')">VIEW JOB</button>
+    </div>
+
+    <!-- Second job card -->
+    <div class="card">
+      <!-- Badge indicating job type -->
+      <div class="badge part-time">part-time</div>
+      <!-- Hourly rate -->
+      <div class="price">$32 / hr</div>
+      <!-- Job title -->
+      <h3>Branding Expert</h3>
+      <!-- Company name -->
+      <div class="company">Hubstaff</div>
+      <!-- Skill tags -->
+      <div class="tags">
+        <span class="tag">PHP</span>
+        <span class="tag">android</span>
+        <span class="tag">iOS</span>
+        <span class="tag">+2</span>
+      </div>
+      <!-- Job description -->
+      <p>Looking for an experienced person to help us with rebranding our business. We are interested in a...</p>
+      <!-- Button with JavaScript functionality -->
+      <button class="view-job" onclick="viewJob('Branding Expert')">VIEW JOB</button>
+    </div>
+  </div>
+
+  <script>
+    /**
+     * Function to display a message when the "VIEW JOB" button is clicked.
+     * @param {string} jobTitle - The title of the job being viewed.
+     */
+    function viewJob(jobTitle) {
+      alert(`You clicked to view the job: ${jobTitle}`);
+    }
+  </script>
+</body>
+</html>
